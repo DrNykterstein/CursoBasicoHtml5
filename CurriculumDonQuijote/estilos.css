@@ -1,0 +1,95 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+
+}
+
+header{
+	width: 100%; /* ocupa toda la pantalla */
+	background: #565454; /*Para cambiarle el fondo a la cabecera */
+	color:#FFF; /*le cambio el color a las letras*/
+	padding-top: 1em; /* Margen arriba */
+	padding-bottom:  1em; /* Margen Abajo */
+}
+
+header img{
+	width: 100px;
+	margin-left: 46%;
+	margin-top: 0.9%;
+	border-radius: 100%;
+}
+
+h1{
+	text-align: center; /*centro el texto */
+	font-family: Helvetica; /* cambio mi fuente */
+	font-size:1.5em;/*tamaño de la fuente */
+}
+
+h2{
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 1em;
+}
+
+section{
+	width: 70%;
+	margin: 0 auto 0 auto;
+}
+
+article{
+	padding: 40px 0 20px 0;
+	/*
+	padding-top:40px;
+	padding-bottom: 20px;
+	padding-right: 0px:
+	padding-left: 0px; */ 
+	border-bottom: #888282 solid 1px; /* Linea de separación */
+}
+
+article h2{
+	float: left; /* Desplaza el h2 a la derecha */
+	border-bottom: solid 2px #21abc5;
+	padding-bottom: 5px;
+	text-transform: uppercase; /*mayusculas */
+	line-height:1.3em;/* separacion entre lineas */
+	font-size: 1em;
+}
+
+article ul li{
+	margin-left: 15px;
+	list-style: square;
+}
+
+article p, article ul{
+	margin-left: 20%;
+	font-family: Helvetica;
+	line-height:1.3em;
+	color: #817c7c;
+	margin-bottom: 1.5em;
+}
+
+footer{
+	margin-top: 4em;
+	padding: 2em;
+	width: 100%; /* ocupa toda la pantalla */
+	background: #565454; /*Para cambiarle el fondo a la cabecera */
+	color:#FFF; /*le cambio el color a las letras*/
+	padding-top: 1em; /* Margen arriba */
+	padding-bottom:  1em; /* Margen Abajo */
+}
+
+footer p{
+	text-align: center;
+	font-family: Helvetica;
+}
+
+footer a:link, footer a:visited{
+	color: #fff;
+}
+
+footer a:hover{
+	text-decoration: none;
+}
