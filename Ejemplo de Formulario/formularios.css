@@ -1,0 +1,71 @@
+*{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;/*para que tenga los pixeles de ancho */
+}
+
+body{
+	background: #f2f2f2;
+	font-family: Arial, Sans-serif;
+	background: url(img/7.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; /*tamaño del fondo. Empieza por el ancho,alto o cover, contain */
+}
+
+.formulario{
+	background: #fff;
+	width: 500px; /*ancho */
+	margin: 20px auto; /*para centrarlo */
+	padding: 20px;
+	margin-top: 100px;/*para bajarlo un poco */
+	border-radius: 11px;
+}
+
+.formulario input{
+	display: block;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea{
+	width: 100%;
+	padding: 20px;
+	margin-bottom:20px ;/*margen inferior, para separarlos uno del otro */
+	border-radius: 5px; 
+	border: 1px solid #226fc1;
+	font-family: Arial;
+	font-size: 18px;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus,
+.formulario textarea:focus{
+	border: 2px solid #4fb560;
+
+}
+
+/* --- Para regular el agrandamiento del textarea */
+.formulario textarea{
+	min-height: 120px;
+	max-height: 300px;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+/*Estilos al boton */
+.formulario input[type="submit"]{
+	width: 200px;
+	margin:0 auto;/*para centrar el boton */
+	background: none;
+	border: 1px solid #4fb560;
+	color: #4fb560;
+	padding: 10px;
+	cursor: pointer;/*Para cambiar el cursor */
+	font-size: 17px;
+	border-radius: 5px;
+}
+
+.formulario input[type="submit"]:hover{
+	background: #4fb560;
+	color: #fff;
+}
