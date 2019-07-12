@@ -1,0 +1,51 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #f2f2f2;
+	font-family: sans-serif;/*fuente*/
+}
+
+/* --- Accedo al contenedor --- */
+.contenedor{
+	width: 1000px;/*ancho*/
+	background: #ccc;
+	margin:20px auto;/*Arriba y abajo de 20px y auto para que se centre */
+
+}
+
+header{
+	background: #30323d;
+	color:#fff;
+	padding: 20px;
+}
+
+/*---Accedo al main ---*/
+.main{
+	background: #fff;
+	padding: 20px;
+	width: 700px;
+	float: left;
+}
+
+aside{
+	background: #e9c547;
+	padding: 20px;
+	/*El contenodr abarca 1000px
+	 El articulo (main) mide 700px, pero el padding me le agrega
+	 20px a ambos lados, es decir que son 740px, se le resta 40 y
+	 Le doy al sidebar 260px... Para ahorranos esta ladilla, usamos 
+	 box-sizing: border-box, para forzar todo; */
+	width: 300px;
+	float: left;
+}
+
+footer{
+	clear: both; /*para que el footer se quede abajo, para que me abarque el 100%*/
+	background: #4d5061;
+	padding: 20px;
+	color: #fff;
+}
