@@ -1,1 +1,1 @@
-Repositorio de las clases del Curso básico de html5 y css3
+Repositorio de las clases dictadas del Curso básico de html5 y css3
