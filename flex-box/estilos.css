@@ -1,0 +1,62 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+html{
+	font-size: 62.5%; /* Reset para REM */
+	/* 62.5 = 10px de 16px */
+	box-sizing: border-box;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+body{
+	background: #ff9966;
+	background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+    background: linear-gradient(to right, #ff5e62, #ff9966); 
+}
+
+.contenedor{
+	background-color: white;
+	max-width: 1000px;
+	margin: 0 auto;
+	height: calc( 100vh - 20px );
+	padding:20px 30px 0 30px;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+}
+h2 {
+    color:black;
+}
+
+.elemento-flex{
+	padding: 10px;
+	font-size: 2rem;
+	background-color: #E53935;
+}
+
+.elemento-flex:nth-child(2) {
+    background-color: #8E24AA;
+}
+
+.elemento-flex:nth-child(3) {
+    background-color: #3F51B5;
+}
+
+.contenedor-flex{
+	display: flex;
+	border: groove 1rem black;
+	border-radius:2rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.elemento-2{
+	order: -1;
+}
