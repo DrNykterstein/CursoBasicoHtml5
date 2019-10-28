@@ -1,0 +1,95 @@
+/************ Estilos generales *******/
+*{
+	margin:0;
+	padding:0;
+}
+
+html{
+	font-size: 62.5%; /* Reset para REM */
+	/* 62.5 = 10px de 16px */
+	box-sizing: border-box;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+/*** Para que las imagenes sean Responsive ***/
+img{
+    max-width: 100%;
+}
+body{
+    background-color: #515126;
+    font-size: 1.7rem;
+}
+
+/*** Utilidad ***/
+.mt-1{
+    margin-top:1rem;
+}
+
+/*** Contenedor Principal ****/
+.contenedor{
+    max-width: 1100px;/* Anchura maxima */
+    margin: 0 auto;
+}
+
+/*** Contenedor de Flexbox ***/
+@media(min-width:480px){
+    .contenedor-flex{
+        display: flex;
+        flex-wrap: wrap;/*Para que todo se mantenga dentro del contenedor */
+        justify-content: space-between;
+    }
+    .entrada{
+        flex: 0 1 calc(50% - 1rem);
+    }
+
+}
+
+@media(min-width:768px){
+    .entrada{
+        flex: 0 1 calc(33% - 1rem);
+    }
+
+}
+
+/*** Para que el titulo no me agarre flex-box ***/
+h2{
+    flex: 0 1 100%;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Libre Baskerville';
+    font-weight: 700;
+}
+
+.entrada{
+    margin-bottom: 1rem;
+}
+
+.contenido{
+    background-color:white;
+    padding:1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contenido h3{
+    font-size:16px;
+    line-height: 14px;
+}
+
+.contenido p span{
+    color: rgb(15, 143, 194);
+}
+
+.boton{
+    background-color:#008fd1;
+    color:white;
+    display:inline-block;
+    padding: .6rem 3rem;
+    text-decoration: none;
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
