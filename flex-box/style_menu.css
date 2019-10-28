@@ -1,0 +1,136 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    margin:0;
+    background: #ff9966;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.header-sitio {
+    background-color: rgb(0, 28, 41);
+    padding:0 20px;
+    display: flex;/*Habilito flexbox*/
+    flex-direction: column;
+}
+@media (min-width:768px) {
+    .header-sitio {
+        flex-direction: row;/* Para que en dispositivos de pantalla grande, me ponga los 
+        elementos en linea */
+        justify-content: space-between;
+        /* Space Between el espacio del lado izquierdo y deja la navegacion centrada
+        es decir, que me dejara en elemento a lado izquierdo y otro al lado derecho */
+    }
+}
+.header-sitio h1 {
+    color:white;
+}
+
+nav {
+    align-self: center;
+}
+nav a {
+    color: white; 
+    font-family: 'IBM Plex Serif', serif;
+    text-decoration: none;
+}
+
+.contenedor {
+    background-color: white;
+    min-height: calc( 100vh - 20px );
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 30px 0 30px;
+}
+h1, h2 {
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+}
+h2 {
+    color:white;
+}
+
+.contenedor-flex {
+    margin-top: 20px;
+    display: flex;
+    flex-direction:column;
+  
+}
+@media (min-width:768px) { 
+    .contenedor-flex {
+       flex-direction: row;
+    }
+}
+
+.principal {
+    order:2;
+
+}
+aside {
+    background-color: #03A9F4;
+    margin-bottom: 10px;
+    
+}
+@media (min-width:768px) {
+    .principal {
+       flex: 0 1 60%;
+       margin-right: 20px;
+       order:-1;
+    }
+    aside {
+        flex: 1;
+    }
+}
+
+@media (min-width:768px) {
+    .servicios {
+        display:flex;
+    
+    }
+    .servicios .servicio {
+        flex-grow: 1;
+    }
+}
+
+.servicio {
+    padding: 5px;
+    background-color: #E53935;
+}
+
+
+.servicio:nth-child(2) {
+    background-color: #8E24AA;
+}
+
+.servicio:nth-child(3) {
+    background-color: #3F51B5;
+}
+
+footer {
+    height: 100px;
+    background-color: #8E24AA;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    color: white;
+   
+}
+
+aside a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+aside ul li{
+    list-style: none;
+}
