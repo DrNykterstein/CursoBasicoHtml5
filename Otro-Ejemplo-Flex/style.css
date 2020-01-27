@@ -1,15 +1,18 @@
 *{
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 a{
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
 }
 
 body{
-    font-family: vardana;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
     color: white;
     background-color: #e1e1e1;
 }
@@ -18,10 +21,18 @@ header{
     width: 100%;
     height: 450px;
 }
-nav ul{
-    list-style:none;
-    margin: 0;
-    padding: 0;
+nav{
+    background-color: rgb(90, 63, 122);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: white;
+    font-size:35px;
+    line-height:80px;
+    padding: 0 100px;
+    font-weight: bold;
 }
 
 nav ul li{
@@ -34,9 +45,78 @@ nav ul a{
     font-size:1.4rem;
 }
 
-.menu ul{
+nav.menu{
     display: flex;
-    justify-content: flex-end;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+nav.menu ul{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+nav ul li a{
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active,a:hover{
+    background: #5100b4;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size:30px;
+    color: white;
+    line-height:80px;
+    float: right;
+    margin-right:30px;
+    padding: 5px;
+    padding-top: 2px;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width:952px){
+    label.logo{
+        font-size:30px;
+        padding-left:30px;
+    }
+    nav ul li a{
+        font-size:17px;
+    }
+}
+
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height:100vh;
+        background: #2c3e50;
+        top:70px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin:50px 0;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
 }
 
 .menu-flex{
