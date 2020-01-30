@@ -10,18 +10,21 @@
 </head>
 <body>
     <header>
-        <div class="menu-header">
-            <img src="img/icono.png" alt="">
-        </div><!--Menu Header-->
-        <div class="enlaces-menu">
-            <a href="#">Home</a>
-            <a href="#">Blog</a>
-            <a href="#">AboutMe</a>
-            <a href="#">Contact</a>
-        </div><!--Enlaces menu-->
+        <nav>
+            <div class="menu-header">
+                <img src="img/icono.png" alt="">
+            </div><!--Menu Header-->
+            <!--
+            <div class="enlaces-menu">
+                <a href="#">Home</a>
+                <a href="#">Blog</a>
+                <a href="#">AboutMe</a>
+                <a href="#">Contact</a>
+            </div><!--Enlaces menu--> 
+        </nav>
         <div class="contenido-header">
             <div class="texto-header">
-                <h1>Somos un Equipo, escribimos nuestra historia</h1>
+                <h1>Más que equipo, somos familia</h1>
                 <h2>Cardenales somos todos</h2>
                 <a href="#">Ver más</a>
             </div>
@@ -29,14 +32,12 @@
                 <img src="img/1.svg" alt="">
             </div><!--Imagen-header-->
         </div><!--Contenido header-->
-        <!--Efecto cascada, para una mayor visualización mas bonita-->
-        <div class="efecto-cascada" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-12.69,43.91 C142.49,141.61 196.66,27.13 500.00,49.98 L500.00,150.00 L-0.84,152.45 Z" style="stroke: none; fill: #08f;"></path></svg></div>
     </header>
     <main>
         <section class="contenedor acerca">
             <h3>Ven a disfrutar y pasala genial</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad obcaecati repudiandae</p>
-            <div class="contenedor-flex">
+            <div class="contenedor-flex-acerca">
                 <div class="tarjeta">
                     <i class="fas fa-portrait"></i>
                     <h4>Atención exclusiva</h4>
@@ -54,7 +55,129 @@
                 </div><!--tarjeta-->
             </div><!--Contenedor flex-->
         </section>
+        <!--Seccion hacemos todo por ti-->
+        <section class="contenedor-servicio">
+            <div class="servicio">
+                <img src="img/2.svg" class="imagen-servicio" alt="">
+            </div>
+            <article>  
+                <h3>Hacemos todo por ti</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, a? Atque in</p>
+                <ul>
+                    <li>El mejor equipo </li>
+                    <li>La mejor fanaticada</li>
+                    <li>El mejor animador</li>
+                    <li>La mejor cuidad</li>
+                </ul>
+            </article>
+        </section>
+        <section class="galeria contenedor">
+            <h3>Conoce nuestro trabajo</h3>
+            <p>Ven y disfruta</p>
+            <article class="galeria">
+                <div class="galeria-imagen">
+                    <img src="img/imagen1.jpg" alt="">
+                    <div class="extra-galeria">
+                        <p>Ven al curso de desarrollo web en el Inces, gratis</p> 
+                    </div><!--extra galeria-->
+                </div><!-- Galeria imagen-->
+                <div class="galeria-imagen">
+                    <img src="img/imagen2.jpg" alt="">
+                    <div class="extra-galeria">
+                        <p>Ven al curso de desarrollo web en el Inces, gratis</p> 
+                    </div><!--extra galeria-->
+                </div><!-- Galeria imagen-->
+                <div class="galeria-imagen">
+                    <img src="img/imagen3.jpg" alt="">
+                    <div class="extra-galeria">
+                        <p>Ven al curso de desarrollo web en el Inces, gratis</p> 
+                    </div><!--extra galeria-->
+                </div><!-- Galeria imagen-->
+                <div class="galeria-imagen">
+                    <img src="img/imagen4.jpg" alt="">
+                    <div class="extra-galeria">
+                        <p>Ven al curso de desarrollo web en el Inces, gratis</p> 
+                    </div><!--extra galeria-->
+                </div><!-- Galeria imagen-->
+                <div class="galeria-imagen">
+                    <img src="img/imagen1.jpg" alt="">
+                    <div class="extra-galeria">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorese.</p> 
+                    </div><!--extra galeria-->
+                </div><!-- Galeria imagen-->
+                <div class="galeria-imagen">
+                    <img src="img/imagen6.jpg" alt="">
+                    <div class="extra-galeria">
+                        <p>Andherson es un Hacker, Camilo es un pajuo, Juan es otro pajuo</p> 
+                    </div><!--extra galeria-->
+                </div><!-- Galeria imagen-->
+            </article>
+        </section><!--Galeria contenedor-->
+        <section class="precios">
+            <h3>Tabla de precios</h3>
+            <div class="tablas-precio contenedor">
+                <!--Tabla 1-->
+                <div class="tablas">
+                    <h5>Basico</h5>
+                    <p class="precio"><span>10$</span> por persona</p>
+                    <ul>
+                        <li>opciones</li>
+                        <li>opciones</li>
+                        <li>opciones</li>
+                    </ul>
+                    <a href="#">Comprar ahora</a>
+                </div><!--tablas-->
+                <!--Tabla 2-->
+                <div class="tablas">
+                    <h5>Basico</h5>
+                    <p class="precio"><span>10$</span> por persona</p>
+                    <ul>
+                        <li>opciones</li>
+                        <li>opciones</li>
+                        <li>opciones</li>
+                    </ul>
+                    <a href="#">Comprar ahora</a>
+                </div><!--tablas-->
+                <!--Tabla 3-->
+                <div class="tablas">
+                    <h5>Basico</h5>
+                    <p class="precio"><span>10$</span> por persona</p>
+                    <ul>
+                        <li>opciones</li>
+                        <li>opciones</li>
+                        <li>opciones</li>
+                    </ul>
+                    <a href="#">Comprar ahora</a>
+                </div><!--tablas-->
+            </div><!--Tablas precio-->
+        </section>
+        <!--Slider-->
+        <div class="slider-contenedor">
+            <section class="slider">
+                <div class="cont-slider">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing el.</p>
+                    <img src="img/emma.jpg" alt="">
+                    <h4>Dahiana</h4>
+                </div><!--Conte-slider-->
+                <div class="cont-slider">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicingdddd el.</p>
+                    <img src="img/emma.jpg" alt="">
+                    <h4>Emma</h4>
+                </div><!--Conte-slider-->
+            </section><!--Slider-->
+        </div><!--Slider-->
     </main>
+    <!--Pie de pagina-->
+    <footer>
+        <div class="contenedor-footer">
+            <h5>Contactanos</h5>
+            <p>info@crypto.xyz</p>
+            <p>04125458785887</p>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter-square"></i>
+        </div><!--contenedor footer-->
+    </footer>
     <!--Scripts-->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
