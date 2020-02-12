@@ -3,6 +3,7 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    list-style: none;
 }
 body{
     font-family:'Comfortaa', cursive;
@@ -19,6 +20,9 @@ h3{
     text-align: center;
     margin-bottom: 16px;
     font-size: 29px;
+}
+.centrar-text{
+    text-align: center;
 }
 header{
     width: 100%;
@@ -146,4 +150,150 @@ header{
     font-weight: 300;
     margin-bottom: 5px;
     color:#585858;
+}
+/* Servicios */
+.contenedor-servicio{
+    background-color: #f2f2f2;
+   
+}
+.servicio{
+    padding: 80px 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.imagen-servicio{
+    width:50%;
+}
+.imagen-servicio img{
+    width:100%;
+    vertical-align: top;
+}
+.servicio .contenido-serv ul li{
+    list-style-type: none;
+    border-bottom: 4px dotted #0575E6;
+    margin-bottom: 20px;
+    padding-bottom:10px;
+    color: #021B79;
+}
+.contenido-serv{
+    width: 50%;
+    padding-left:30px;
+}
+.contenido-serv h3{
+    font-size: 34px;
+    text-align: left;
+}
+.contenido-serv p{
+    text-align: justify;
+    margin-bottom: 40px;
+    width: 90%;
+    color: #0575E6;
+}
+.contenido-serv ul{
+    padding-left:10px;
+}
+/* galeria de imagenes */
+.galerias{
+    margin-top:40px;
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.galeria-imagen{
+    position: relative;
+    overflow: hidden;
+    width:32%;
+    box-shadow:0px 0px 5px rgba(0, 0, 0,.76);
+    margin-bottom: 30px;
+}
+.galeria-imagen img{
+    object-fit: cover;/*Para un mayor resolucion*/
+    width: 100%;
+    height: 250px;
+    vertical-align: top;
+    transform:scale(1);
+    transition: transform .6s;
+}
+.galeria-imagen img:hover{
+    transform: scale(1.3);
+}
+.extra-galeria{
+    position: absolute;
+    top: 0;
+    background:rgba(2, 36, 158, 0.726);
+    width: 100%;
+    height: 100%;
+    transform: translate(-100%, -10%);
+    transition: transform .6s;
+}
+.extra-galeria p{
+    width: 95%;
+    margin: 10px auto;
+    color: #fff;
+    font-weight: 300;
+    text-align: justify;
+}
+.galeria-imagen:hover .extra-galeria{
+    transform: translate(0);
+}
+/* Precios */
+.precios{
+    background-color: #f2f2f2;
+}
+.precios h3{
+    padding-top: 29px;
+}
+.tablas-precio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tablas{
+    background-color: #fff;
+    width: 29%;
+    text-align: center;
+    border-radius: 4px;
+    padding:40px 0px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.75);
+    color: #000;
+}
+.tablas h5{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size:28px;
+}
+.tablas .precio{
+    color: #585858;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.tablas .precio span{
+    font-size:24px;
+}
+.tablas ul li{
+    display: block;
+    border-bottom: 1px dotted #585858;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.tablas>a{
+    display: inline-block;
+    margin-top:13px;
+    color: #000;
+    background-color: #0575E6;
+    width: 156px;
+    height: 50px;
+    padding: 12px;
+    border-radius:10px;
+    font-weight: 700;
+    box-shadow:1px dotted #585858;
+}
+.tablas-precio:hover{
+    cursor:pointer;
+    border-bottom: 1px dotted white;
 }
